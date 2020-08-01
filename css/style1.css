@@ -1,0 +1,115 @@
+*
+{
+    margin: 0;
+}
+.header1
+{
+    padding-top: 30px;
+    border: 2px;
+    height: 70px;
+    color: rgb(5, 5, 5);
+    text-decoration: solid;
+    text-shadow: 8px 8px 8px black, 0 0 25px rgb(196, 164, 164), 0 0 5px rgb(199, 163, 163);
+    border-style: solid;
+    background-image: url(../img/m4.png);
+    opacity: .4;   
+}
+.header2
+{
+    padding-top: 20px;
+    border: 2px;
+    height: 70px;
+    color: rgb(8, 1, 20);
+    text-decoration: double;
+    text-shadow: 8px 8px 8px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+    border-style: solid;
+    background-image: url(../img/d1.jpg);
+    opacity: .4;   
+}
+.border
+{
+    border-style: inherit;
+}
+body
+{
+    background-image: url(../img/m3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+h1
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+}
+b
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type=text],input[type=password],input[type=number]
+{
+    text-align: center;
+    border-radius: 20px;
+    height: 30px;
+    box-shadow:10px 10px 10px rgb(56, 20, 20);
+}
+p
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;color:black;
+}
+p.class
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:x-large;color: crimson ;
+}
+.media{
+    width: 260px;
+    height: 250px;
+    text-align: center;
+    padding-left: .7%; 
+    padding-top: 6%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px; 
+    margin: 2%;
+    transition: transform .3s;
+    color: rgb(226, 218, 230);
+    background-color: rgb(78, 14, 14);
+    background-image: linear-gradient(180deg, #1c7fa7,#695353);   
+}
+.media a:link,a:visited{
+    width: 50px;
+    height: 20px;
+    font-size: 15px;
+    color: rgb(226, 218, 230);
+    background-color: rgb(32, 8, 8);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 20px rgb(54, 14, 14);
+}
+.media a:hover, a:active {
+    color: rgb(15, 4, 4);
+    background-color: rgb(255, 250, 250);
+}
+.button
+{
+    text-align: center;
+    border-radius: 20px;
+    height: 30px;
+    box-shadow:10px 10px 10px rgb(56, 20, 20);
+}
+.footer
+{
+    padding-top: 20px;
+    border: 2px;
+    height: 350px;
+    color: rgb(255, 255, 255);
+    text-decoration: double;
+    text-shadow: 8px 8px 8px black, 0 0 25px rgb(196, 164, 164), 0 0 5px rgb(199, 163, 163);
+    border-style: solid;
+    background-image: url(../img/footer.jpg);
+    opacity: .4;   
+}
