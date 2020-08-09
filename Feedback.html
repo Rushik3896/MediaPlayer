@@ -3,13 +3,16 @@
 <head>
     <title>Feedback/Report</title>
     <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/feedback.js"></script>
 </head>
-<body>
-    <h1 class="header2" align="center">*Give Your Feedback</h1><hr><br>
-    <br><b>
-        <a href="./Login.html" class="button">Log In/Sign Up</a>&nbsp;&nbsp;<i class="button2">|</i>
-        <a href="./index.html" class="button">Home</a>&nbsp;&nbsp;<i class="button2">|</i>
-        <a href="./About us.html" class="button">About us</a>&nbsp;&nbsp;<i class="button2">|</i></b><br><br><br>
+<body class="body1">
+    <h1 class="header2" align="center">*Give Your Feedback</h1><hr>
+    <h3><b>
+        &nbsp;<i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;<a href="./Login.html" class="button">Log In/Sign Up</a>&nbsp;
+        &nbsp;<i class="fa fa-home" aria-hidden="true"></i>&nbsp;<a href="./index.html" class="button">Home</a>&nbsp;
+        &nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;<a href="./About us.html" class="button">About us</a>&nbsp;
+    </h3></b><br><br><br>
         <center>
             <form action="./index.html" method="POST" align="center" class="box" style="height: 250px;">
                 <br><br>
@@ -19,7 +22,7 @@
                 <input type="text" name="feedback"><br><br>
                 <label for="report"><b>Any Report or Suggations:</b></label><br><br>
                 <input type="textarea" name="report"><br><br>
-                <input type="submit" value="Thanks" class="button2">
+                <input type="submit" value="Thanks" onclick="validate()" class="button2">
             </form>
         </center>
 </body>

@@ -24,18 +24,25 @@
     text-decoration: double;
     text-shadow: 8px 8px 8px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
     border-style: solid;
-    background-image: url(../img/m1.jpg);
+    background-image: url(../img/h2.jpg);
     background-position: center;
     background-repeat: repeat-x;
-    background-size: 200px;
 }
 .border
 {
     border-style: inherit;
 }
-body
+.body1
 {
     background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+.body2
+{
+    background-image: url(../img/footer.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -46,19 +53,28 @@ h1
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 45px;
 }
+h3
+{
+    border-style: hidden;
+    background-color: rgb(11, 177, 243);
+    height: 30px;
+    padding-top: 10px;
+    opacity: .6;
+}
 b
 {
     font-family: Arial, Helvetica, sans-serif;
 }
 .box
 {
-    background-image: url(../img/m3.jpg);
+    background-image: url(../img/b1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     width: 300px;
     border-radius: 125px;
     border: 5px solid rgb(2, 2, 34);
     padding: 55px;
     margin: 10px;
-    opacity: .6;
     box-shadow: 10px 10px 10px rgb(10, 54, 104);
 }
 .box2
@@ -125,15 +141,15 @@ p.class
 {
     width: 50px;
     height: 20px;
-    font-size: 15px;
+    font-size: 18px;
     border-radius: 20px;
-    color: rgb(240, 236, 235);
-    background-color: rgba(15, 123, 247, 0.5);
+    color: rgba(66, 6, 25, 0.616);
+    background-color: rgba(71, 79, 194, 0.5);
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
-    box-shadow: 2px 2px 20px rgb(54, 14, 14);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 2px 2px 20px rgb(240, 234, 234);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .media .button .button2 a:hover, a:active {
     color: rgb(15, 4, 4);
@@ -144,14 +160,13 @@ p.class
     text-align: center;color: whitesmoke;
     border-radius: 20px;
     height: 30px;
-    box-shadow:10px 10px 10px rgb(49, 61, 5);
 }
 .button2
 {
-    text-align: center;color: brown;
+    text-align: center;color: rgb(56, 63, 24);
     border-radius: 20px;
     height: 30px;
-    box-shadow:10px 10px 10px rgb(49, 61, 5);
+    box-shadow:10px 10px 10px rgb(45, 59, 7);
 }
 .footer
 {
@@ -169,3 +184,77 @@ p.class
     background-attachment: scroll;
     opacity: .8;
 }
+
+/* *
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+} */

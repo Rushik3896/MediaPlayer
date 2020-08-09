@@ -3,11 +3,12 @@
     <head>
         <title>Registration</title>
         <link rel="stylesheet" href="css/style1.css">
+        <script src="./js/Signin.js"></script>
     </head>
-    <body>
-        <h1 align="center" style="font-size:45px;" class="header1">Registration for Media Player</h1><hr><br><br><br>
+    <body class="body2">
+        <h1 class="header1" align="center">Registration for Media Player</h1><hr><br><br><br>
         <center>
-            <form action="./Login.html" method="post" align="center" class="box">
+            <form id="myform" align="center" class="box">
                 <table border="0">
                     <tr>
                         <td>
@@ -38,12 +39,14 @@
                             <label for="number" style="font-size: large;"><b>Mo. Number:</b></label>
                         </td>
                         <td>
-                            <input type="number" name="number" placeholder="10-digit number" required><br><br>
+                            <input type="text" name="number" placeholder="987*******" required><br><br>
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input type="submit" value="Submit" class="button2"><br><br>
+                            <a href="./index.html"><input type="button" value="Cancel" class="button2">&nbsp;</a>
+                            <input type="button" value="Submit" onclick="validate()" class="button2">&nbsp;
+                            <a href="./Signin.html"><input type="button" value="Reset" class="button2"></a><br><br>
                         </td>
                     </tr>
                     <tr>
