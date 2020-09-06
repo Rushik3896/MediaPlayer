@@ -3,19 +3,53 @@
     <head>
         <title>Login Page</title>
         <link rel="stylesheet" href="css/style1.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="./js/login.js"></script>
+        <script src="./js/menu.js"></script>
     </head>
     <body class="body2">
-        <h1 align="center" class="header1">Welcome to Media Player</h1><hr><br><br><br>
+        <h1 align="center" class="header1">Login Here</h1><hr>
+        <h3><b>
+            &nbsp;<i class="fa fa-home" aria-hidden="true"></i>&nbsp;<a href="./index.html" class="button">Home</a>&nbsp;
+            &nbsp;<i class="fa fa-comments" aria-hidden="true"></i>&nbsp;<a href="./Feedback.html" class="button">Feedback/Report</a>&nbsp;
+            &nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;<a href="./About us.html" class="button">About us</a>&nbsp;
+        </h3></b>
+        <br><br><br>
         <center>
         <form id="myform" action="./index.html" method="POST" align="center" class="box">
-            <label for="user"><b>Username:</b></label>
-            <input type="text" name="user" placeholder="rushikkheni" required><br><br>
-            <label for="pass"><b>Password:</b></label>
-            <input type="password" name="pass" placeholder="***" required><br><br>
-            <input onclick="display()" type="submit" value="Login" class="button2"><br><br>
-            <a href="./Signin.html" class="button"><b>New Account</b></a><br><br>
-            <a href="./About us.html" class="button"><b>About us</b></a>
+            <table border="0">
+                <tr>
+                    <td>
+                        <label for="user"><b>Username:</b></label>
+                    </td>
+                    <td>
+                        <input type="text" name="user" placeholder="rushikkheni" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass"><b>Password:</b></label>
+                    </td>
+                    <td>
+                        <input type="password" name="pass" placeholder="***" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button onclick="display()" class="loginbtn"><b>Login</b></button><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="./Signin.html"><div class="login"><b>Create Account</b></div></a><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="./About us.html"><div class="login"><b>About us</b></div></a>
+                    </td>
+                </tr>
+            </table>           
         </form>
         </center>
     </body>

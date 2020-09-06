@@ -2,6 +2,7 @@ function validate()
 {
     var nme = document.getElementsByName("user")[0].value;
     var pwd = document.getElementsByName("pass")[0].value;
+    var cpwd = document.getElementsByName("cpass")[0].value;
     var eml = document.getElementsByName("mail")[0].value;
     var phn = document.getElementsByName("number")[0].value;
     var patt = /^\d{10}$/;
@@ -16,6 +17,10 @@ function validate()
     else if (pwd == "") 
     {
         alert("Password Required!");
+    }
+    else if(pwd != cpwd)
+    {
+        alert("Password must be same!");
     }
     else if (eml == "") 
     {

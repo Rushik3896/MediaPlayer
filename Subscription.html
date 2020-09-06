@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./js/subscribe.js"></script>
+    <script src="./js/menu.js"></script>
 </head>
 <body class="body1">
     <h1 class="header2" align="center">*Fill the Below Details</h1><hr>
@@ -13,7 +14,16 @@
         &nbsp;<i class="fa fa-home" aria-hidden="true"></i>&nbsp;<a href="./index.html" class="button">Home</a>&nbsp;
         &nbsp;<i class="fa fa-comments" aria-hidden="true"></i>&nbsp;<a href="./Feedback.html" class="button">Feedback/Report</a>&nbsp;
         &nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;<a href="./About us.html" class="button">About us</a>&nbsp;
-    </h3></b><br><br><br>
+    </h3></b>
+    <span style="font-size:30px;cursor:pointer;color: aliceblue;" onclick="openNav()">&#9776;Menu</span>
+        <h2 id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><hr>
+            <a href="./myacc.html"><i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;My Profile</a><hr>
+            <a href="./Subscription.html"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Subscribe</a><hr>
+            <a href="./About us.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About</a><hr>
+            <a href="./Feedback.html"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Feedback</a><hr>
+            <a href="./Login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a><hr>
+        </h2><br><br><br><br>
         <center class="sub">
             <form action="./index.html" method="POST" align="center" class="box2">
                 <label for="user"><b>Username:</b></label>
@@ -25,10 +35,11 @@
                 <label for="branch"><b>Branch Name:</b></label>
                 <input type="text" name="branch" required><br><br>
                 <label for="plan"><b>Select your Plan:&nbsp;</b></label>
-                <input type="radio" name="plan" value="plan1">&nbsp;Silver&nbsp;&nbsp;
-                <input type="radio" name="plan" value="plan2">&nbsp;Gold&nbsp;&nbsp;
-                <input type="radio" name="plan" value="plan3">&nbsp;Platinum&nbsp;&nbsp;<br><br>
-                <center><table border="1"><b>
+                <input type="radio" name="plan" value="plan1">&nbsp;<b>Silver</b>&nbsp;&nbsp;
+                <input type="radio" name="plan" value="plan2">&nbsp;<b>Gold</b>&nbsp;&nbsp;
+                <input type="radio" name="plan" value="plan3">&nbsp;<b>Platinum</b>&nbsp;&nbsp;<br><br>
+                <center>
+                    <table border="2"><b>
                     <tr>
                         <td>
                             <font size="4">Silver<br>(Pay Rs.250<br>Advance facilities 3-months)</font>
@@ -40,10 +51,11 @@
                             <font size="4">Platinum<br>(Pay Rs.850<br>Advance facilities 1-year)</font>
                         </td>
                     </tr></b>
-                </table></center><br><br>
-                <input type="button" value="Done" onclick="validate()" class="button2">&nbsp;&nbsp;
-                <a href="./Subscription.html"><input type="button" value="Reset" class="button2"></a><br><br>
-                <a href="./UpdateSubcription.html"><input type="button" value="UpdateSubscription" class="button2"></a>
+                    </table>
+                </center><br><br>
+                <button onclick="validate()" class="loginbtn"><b>Done</b></button><br><br>
+                <a href="./Subscription.html"><input type="button" value="Reset" class="loginbtn"></a>&nbsp;&nbsp;
+                <a href="./UpdateSubcription.html"><input type="button" value="Renew" class="loginbtn"></a>
             </form>
         </center>
     </body>

@@ -20,21 +20,21 @@ function validate()
     {
         alert("Account Number Required!");
     }
-    else if (ifsc == "") 
-    {
-        alert("IFSC code Required!");
-    }
-    else if (brh == "") 
-    {
-        alert("Branch name Required!");
-    }
     else if (chkaccn == false) 
     {
         alert("Account number should be 11 digits!!");
     }
+    else if (ifsc == "") 
+    {
+        alert("IFSC code Required!");
+    }
     else if(chkifsc == false)
     {
         alert("Enter Valid IFSC code!!");
+    }
+    else if (brh == "") 
+    {
+        alert("Branch name Required!");
     }
     else 
     {

@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/style1.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="./js/updated.js"></script>
+        <script src="./js/menu.js"></script>
     </head>
     <body class="body1">
         <h1 class="header2" align="center">*Please enter the updated Details</h1><hr>
@@ -13,21 +14,73 @@
             &nbsp;<i class="fa fa-home" aria-hidden="true"></i>&nbsp;<a href="./index.html" class="button">Home</a>&nbsp;
             &nbsp;<i class="fa fa-comments" aria-hidden="true"></i>&nbsp;<a href="./Feedback.html" class="button">Feedback/Report</a>&nbsp;
             &nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;<a href="./About us.html" class="button">About us</a>&nbsp;
-        </h3></b><br><br><br>
+        </h3></b>
+        <span style="font-size:30px;cursor:pointer;color: aliceblue;" onclick="openNav()">&#9776;Menu</span>
+        <h2 id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><hr>
+            <a href="./myacc.html"><i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;My Profile</a><hr>
+            <a href="./Subscription.html"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Subscribe</a><hr>
+            <a href="./About us.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About</a><hr>
+            <a href="./Feedback.html"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Feedback</a><hr>
+            <a href="./Login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a><hr>
+        </h2><br><br><br><br>
         <center>
             <form action="./Login.html" method="POST" align="center" class="box">
-                <label for="uuser"><b>Username:</b></label>
-                <input type="text" name="user" placeholder="rushikkheni"><br><br>
-                <label for="upass"><b>Password:</b></label>
-                <input type="password" name="pass" placeholder="***"><br><br>
-                <label for="umail"><b>E-mail id:</b></label>
-                <input type="text" name="mail" placeholder="xyz@gmail.com"><br><br>
-                <label for="unumber"><b>Mo. Number:</b></label>
-                <input type="number" name="number" placeholder="10-digit number"><br><br>
-                <a href="./index.html"><input type="button" value="Cancel" class="button2">&nbsp;</a>
-                <input type="button" value="Update" onclick="validate()" class="button2">&nbsp;
-                <a href="./Signin.html"><input type="button" value="Reset" class="button2"></a><br><br><br>
-                <a href="./Signin.html" class="button"><b>Delete Account</b></a>
+                <label align="center" style="font-size: 35px;"><b>*Update/Delete</b></label><br><br>
+                <table border="0">
+                    <tr>
+                        <td>
+                            <label for="user"><b>Username:</b></label>
+                        </td>
+                        <td>
+                            <input type="text" name="user" placeholder="rushikkheni" required><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pass"><b>Password:</b></label>
+                        </td>
+                        <td>
+                            <input type="password" name="pass" placeholder="Should be Strong" required><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cpass"><b>Confirm Password:</b></label>
+                        </td>
+                        <td>
+                            <input type="password" name="cpass" placeholder="same as password" required><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mail"><b>E-mail id:</b></label>
+                        </td>
+                        <td>
+                            <input type="text" name="mail" placeholder="e-mail id" required><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="number"><b>Mo. Number:</b></label>
+                        </td>
+                        <td>
+                            <input type="text" name="number" placeholder="987*******" required><br><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="./index.html"><input type="button" value="Cancel" class="loginbtn"></a>&nbsp;
+                            <button onclick="validate()" class="loginbtn"><b>Update</b></button>&nbsp;
+                            <a href="./UpdateDetail.html"><input type="button" value="Reset" class="loginbtn"></a><br><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="./Signin.html"><div class="login"><b>Delete Account</b></div></a>
+                        </td>
+                    </tr>
+                </table>
             </form>
         </center>
     </body>

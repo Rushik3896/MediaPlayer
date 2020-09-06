@@ -4,14 +4,26 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/menu.js"></script>
 </head>
 <body class="body1">
     <h1 class="header2" align="center">Welcome to Media Player. Thank you for joining!</h1><hr>
-    <h3><b>
+    <h3 class="icon"><b>
         &nbsp;<i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;<a href="./Login.html" class="button">Log In/Sign Up</a>&nbsp;
         &nbsp;<i class="fa fa-comments" aria-hidden="true"></i>&nbsp;<a href="./Feedback.html" class="button">Feedback/Report</a>&nbsp;
         &nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;<a href="./About us.html" class="button">About us</a>&nbsp;
-    </h3></b><br><br><br>
+    </h3></b>
+    
+    <span style="font-size:25px;cursor:pointer;color: aliceblue;padding-left: 5px;" onclick="openNav()">&#9776;Menu</span>
+    
+    <h2 id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><hr>
+        <a href="./myacc.html"><i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;My Profile</a><hr>
+        <a href="./Subscription.html"><i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;Subscribe</a><hr>
+        <a href="./About us.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About</a><hr>
+        <a href="./Feedback.html"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Feedback</a><hr>
+        <a href="./Login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a><hr>
+    </h2><br><br><br>
         <center>
         <div class="media" id="1">
             <img src="img/download.jpg" height="200px" width="250px" style="margin-right:30px;border-radius:75px;"><br>
@@ -26,9 +38,9 @@
             <a href="./Subscription.html">Click Here</a>
         </div><br><br><br><br><hr><hr><br>
         <label style="font-size: 30px;"><b style="color: red;">*For Update Details<br>Click below button</b></label><b style="color: darkgoldenrod;"><br>|<br>\/<br></b><br>
-        <a href="./UpdateDetail.html"><button class="button2"><b>UpdateDetail</b></button></a><br><br><br><hr><hr><br>
+        <a href="./UpdateDetail.html"><button class="indexbtn"><b>UpdateDetail</b></button></a><br><br><br><hr><hr><br>
         <label style="font-size: 30px;"><b style="color: red;">*For Update Membership<br>Click below button</b></label><b style="color: darkgoldenrod;"><br>|<br>\/<br></b><br>
-        <a href="./UpdateSubcription.html"><button class="button2"><b>UpdateSubscription</b></button></a>
+        <a href="./UpdateSubcription.html"><button class="indexbtn"><b>UpdateSubscription</b></button></a>
         <br><br><br><br><br><br><br>
         </center>
         <hr>
@@ -58,6 +70,6 @@
                 </table>
         
             </center>
-            </div>
+        </div>
 </body>
 </html>
