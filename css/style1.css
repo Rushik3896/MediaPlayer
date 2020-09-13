@@ -60,10 +60,26 @@ h1
 h3
 {
     border-style: inset;
-    background-color: rgb(171, 170, 175);
-    height: 30px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: rgb(4, 61, 61);
+    height: 35px;
     padding-top: 10px;
-    opacity: .6;
+    opacity: .8;
+}
+
+.icon
+{
+    color: #776ff3;
+}
+
+h3 a:link
+{
+    font-size: 20px;
+}
+
+h3 a:hover{
+    color: #7678f0;
 }
 
 b
@@ -215,11 +231,6 @@ p.class
     box-shadow:10px 10px 10px rgb(73, 69, 51);
 }
 
-.icon
-{
-    color: #3f2f0c;
-}
-
 .footer
 {
     padding-top: 20px;
@@ -276,6 +287,3 @@ p.class
     .sidenav a {font-size: 18px;}
 }
   
-.search{
-    right: 0;
-}

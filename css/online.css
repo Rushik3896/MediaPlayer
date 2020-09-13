@@ -5,6 +5,7 @@
 
 .header
 {
+    margin-top: 0;
     padding-top: 15px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 45px;
@@ -20,9 +21,36 @@
     background-repeat: repeat-x;
 }
 
+.hdrlogin
+{
+    margin-top: 0;
+    padding-top: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    border: 2px;
+    border-style: inherit;
+    height: 80px;
+    color: rgb(8, 1, 20);
+    text-decoration: double;
+    text-shadow: 8px 8px 8px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+    border-style: inherit;
+    background-image: url(../img/m4.png);
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
 .border
 {
     border-style: inherit;
+}
+
+.loginback
+{
+    background-image: url(../img/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
 }
 
 .online
@@ -43,26 +71,58 @@
     background-size:cover;
 }
 
+.lgicon
+{
+    color: #4c4e4d;
+}
+
+h3 a:hover{
+    color: rgb(93, 105, 23);
+}
+
 .h3
 {
     border-style: inset;
+    border-radius: 100%;
+    text-align: center;
     background-color: rgb(225, 232, 235);
     height: 40px;
     padding-top: 5px;
+    opacity: .8;
 }
 
-.box
+.h3 a
+{
+    font-size: 20px;
+}
+
+.h3 a:hover{
+    color: goldenrod;
+}
+
+.search{
+    padding-left: 84%;
+}
+
+.searchbtn{
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(168, 3, 3);
+    border-radius: 100%;
+}
+
+.lgbox
 {
     background-image: url(../img/b1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 300px;
+    padding-top: 50px;
+    width: 400px;
+    height: 350px;
     border-radius: 125px;
-    border: 5px solid rgb(2, 2, 34);
-    padding: 55px;
-    margin: 10px;
-    box-shadow: 10px 10px 10px rgb(10, 54, 104);
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 10px 10px 10px rgb(59, 77, 99);
 }
 
 label
@@ -131,7 +191,7 @@ input[type=textarea]
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #ad7d14;
     display: block;
     transition: 0.3s;
@@ -216,4 +276,8 @@ input[type=textarea]
     background-size: cover;
     background-attachment: scroll;
     opacity: .6;
+}
+
+.heading {
+    font-size: 25px;
 }
