@@ -4,21 +4,28 @@
         <title>Login Page</title>
         <link rel="stylesheet" href="css/online.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <script src="./js/login.js"></script>
         <script src="./js/menu.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#d').addClass('animate__animated animate__tada');
+            });
+        </script>
     </head>
     <body class="loginback">
         <h1 align="center" class="hdrlogin">Login Here</h1>
-        <h3 class="lgicon"><b>
+        <h3 class="lgicon">
             &nbsp;<i class="fa fa-home" aria-hidden="true"></i>&nbsp;<a href="./index.html" class="button" style="color: rgb(15, 213, 248);">Home</a>&nbsp;
             &nbsp;<i class="fa fa-comments" aria-hidden="true"></i>&nbsp;<a href="./Feedback.html" class="button" style="color: rgb(15, 213, 248);">Feedback/Report</a>&nbsp;
             &nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;<a href="./About us.html" class="button" style="color: rgb(15, 213, 248);">About us</a>&nbsp;
-        </h3></b>
+        </h3>
         <br><br><br>
-
+        <div id="d">
         <center>
         <form id="myform" action="./index.html" method="POST" align="center" class="lgbox">
             <center>
@@ -63,7 +70,8 @@
             </center>      
         </form>
         </center>
-        <div class="container">
+        </div>
+        <!-- <div class="container">
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
             <div class="modal fade" id="myModal" role="dialog">
                 <div class="modal-dialog">
@@ -81,6 +89,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>

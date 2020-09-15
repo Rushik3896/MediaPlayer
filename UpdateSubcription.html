@@ -4,17 +4,57 @@
     <title>UpdateSubscribe</title>
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./js/updates.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="./js/subscribe.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#d').addClass('animate__animated animate__jello');
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#div2").hide();
+            $("#div3").hide();
+            $("#div4").hide();
+            $("#div5").hide();
+            $("#div6").hide();
+            $("#btn1").click(function(){
+                $("#div1").slideUp(2000);
+                $("#btn1").remove();
+                $("#btn2").remove();
+                $("#btn3").remove();
+                $("#div2").show(1000);
+                $("#div3").show(1000);
+                $("#div4").show(1000);
+            });
+            $("#btn2").click(function(){
+                $("#div1").slideUp(2000);
+                $("#btn1").remove();
+                $("#btn2").remove();
+                $("#btn3").remove();
+                $("#div3").show(1000);
+                $("#div5").show(1000);
+            });
+            $("#btn3").click(function(){
+                $("#div1").slideUp();
+                $("#btn1").remove();
+                $("#btn2").remove();
+                $("#btn3").remove();
+                $("#div6").show(1000);
+            });
+        });
+    </script>
 </head>
 <body class="body1">
     <h1 class="header2" align="center">Update or Delete Subscription</h1><hr>
-    <h3 class="icon"><b>
+    <h3 class="icon">
         &nbsp;<i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;<a href="./Login.html" class="button">Log In/Sign Up</a>&nbsp;
         &nbsp;<i class="fa fa-home" aria-hidden="true"></i>&nbsp;<a href="./index.html" class="button">Home</a>&nbsp;
         &nbsp;<i class="fa fa-comments" aria-hidden="true"></i>&nbsp;<a href="./Feedback.html" class="button">Feedback/Report</a>&nbsp;
         &nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;<a href="./About us.html" class="button">About us</a>&nbsp;
-    </h3></b>
+    </h3>
     <span style="font-size:30px;cursor:pointer;color: aliceblue;" onclick="openNav()">&#9776;Menu</span>
         <h2 id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><hr>
@@ -24,38 +64,62 @@
             <a href="./Feedback.html"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Feedback</a><hr>
             <a href="./Login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a><hr>
         </h2><br><br><br><br>
+        <div id="d">
         <center class="sub">
             <form action="./index.html" method="POST" align="center" class="box2">
-                <label for="user"><b>Username:</b></label>
-                <input type="text" name="user" placeholder="rushikkheni"><br><br>
-                <label for="accno"><b>Account Number:</b></label>
-                <input type="number" name="accno"><br><br>
-                <label for="ifsc"><b>IFSC Code:</b></label>
-                <input type="text" name="ifsc"><br><br>
-                <label for="branch"><b>Branch Name:</b></label>
-                <input type="text" name="branch"><br><br>
-                <label for="plan"><b>Select your Plan:&nbsp;</b></label>
-                <input type="radio" name="plan" value="plan1">&nbsp;<b>Silver</b>&nbsp;&nbsp;
-                <input type="radio" name="plan" value="plan2">&nbsp;<b>Gold</b>&nbsp;&nbsp;
-                <input type="radio" name="plan" value="plan3">&nbsp;<b>Platinum</b>&nbsp;&nbsp;<br><br>
-                <center><table border="2"><b>
-                    <tr>
-                        <td>
-                            <font size="4">Silver<br>(Pay Rs.250<br>Advance facilities 3-months)</font>
-                        </td>
-                        <td>
-                            <font size="4">Gold<br>(Pay Rs.450<br>Advance facilities 6-months)</font>
-                        </td>
-                        <td>
-                            <font size="4">Platinum<br>(Pay Rs.850<br>Advance facilities 1-year)</font>
-                        </td>
-                    </tr></b>
-                </table></center><br><br><br>
-                <button onclick="validate()" class="loginbtn"><b>Update</b></button>&nbsp;&nbsp;
-                <a href="./index.html"><button onclick="display()" class="loginbtn"><b>Remove</b></button></a><br><br>
-                <a href="./UpdateSubcription.html"><input type="button" value="Reset" class="loginbtn"></a>
-                
+                <div id="head" align="center" style="font-size: 35px;color: rgb(255, 243, 212);"><b>Update / Renew</b></div><br><br>
+                <div id="div1">
+                    <label for="id"><b>Enter your ID: </b></label>
+                    <input type="number" name="id"><br><br>
+                </div>
+                <button id="btn1" class="loginbtn"><b>Update</b></button>&nbsp;&nbsp;
+                <button id="btn2" class="loginbtn"><b>Renew</b></button>&nbsp;&nbsp;
+                <button id="btn3" class="loginbtn"><b>Remove</b></button>
+                <div id="div2">
+                    <label for="user"><b>Username:</b></label>
+                    <input type="text" name="user" placeholder="rushikkheni" required><br><br>
+                    <label for="accno"><b>Account Number:</b></label>
+                    <input type="number" name="accno" required><br><br>
+                    <label for="ifsc"><b>IFSC Code:</b></label>
+                    <input type="text" name="ifsc" required><br><br>
+                    <label for="branch"><b>Branch Name:</b></label>
+                    <input type="text" name="branch" required><br><br>
+                </div>
+                <div id="div3">
+                    <label for="plan"><b>Select your Plan:&nbsp;</b></label>
+                    <input type="radio" name="plan" value="plan1">&nbsp;<b>Silver</b>&nbsp;&nbsp;
+                    <input type="radio" name="plan" value="plan2">&nbsp;<b>Gold</b>&nbsp;&nbsp;
+                    <input type="radio" name="plan" value="plan3">&nbsp;<b>Platinum</b>&nbsp;&nbsp;<br><br>
+                    <center>
+                        <table border="2">
+                            <b><tr>
+                                <td>
+                                    <font size="4">Silver<br>(Pay Rs.250<br>Advance facilities 3-months)</font>
+                                </td>
+                                <td>
+                                    <font size="4">Gold<br>(Pay Rs.450<br>Advance facilities 6-months)</font>
+                                </td>
+                                <td>
+                                    <font size="4">Platinum<br>(Pay Rs.850<br>Advance facilities 1-year)</font>
+                                </td>
+                            </tr></b>
+                        </table>
+                    </center><br><br><br>
+                </div>
+                <div id="div4">
+                    <button onclick="validate()" class="loginbtn"><b>Done</b></button>&nbsp;&nbsp;
+                    <a href="./UpdateSubcription.html"><input type="button" value="Reset" class="loginbtn"></a>
+                </div>
+                <div id="div5">
+                    <a href="./index.html"><input onclick="renew()" type="button" value="Confirm" class="loginbtn"></a>
+                </div>
+                <div id="div6">
+                    <label style="color: red;"><b>Are you Sure!! ?</b></label><br><br>
+                    <a href="./index.html"><input onclick="display()" type="button" value="Yes" class="loginbtn"></a>&nbsp;&nbsp;
+                    <a href="./UpdateSubcription.html"><input type="button" value="No" class="loginbtn"></a>
+                </div>
             </form>
         </center>
+        </div>
     </body>
 </html>

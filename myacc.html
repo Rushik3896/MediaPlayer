@@ -3,13 +3,21 @@
     <title>My Profile</title>
     <link rel="stylesheet" href="css/online.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="./js/menu.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#d1').addClass('animate__animated animate__pulse');
+        });
+    </script>
     <style>
         table{
-            border: 5px solid rgb(16, 102, 35);
+            border-style: ridge;
+            border: 10px double rgb(16, 75, 153);
             width: 500px;
         }
     </style>
@@ -27,7 +35,7 @@
         <a href="./Login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a><hr>
     </h2>
     <center>
-        <div class="container">
+        <div id="d1" class="container">
             <img src="./img/profile.jpg" class="img-circle" alt="Cinque Terre" width="254" height="236" style="left: 0;"> 
         </div>
     </center>

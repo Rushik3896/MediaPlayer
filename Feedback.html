@@ -13,11 +13,11 @@
 </head>
 <body class="online">
     <div class="header" align="center">*Give Your Feedback</div>
-    <div class="h3"><b>
+    <div class="h3">
         &nbsp;<i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;<a href="./Login.html" class="button">Log In/Sign Up</a>&nbsp;
         &nbsp;<i class="fa fa-home" aria-hidden="true"></i>&nbsp;<a href="./index.html" class="button">Home</a>&nbsp;
         &nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;<a href="./About us.html" class="button">About us</a>&nbsp;
-    </div></b>
+    </div>
     <span style="font-size:25px;cursor:pointer;color: aliceblue;" onclick="openNav()">&#9776;&nbsp;Menu</span>
         <h2 id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><hr>
@@ -65,12 +65,20 @@
                         </tr>
                         <tr>
                             <td colspan="2" align="center">
-                                <button onclick="validate()" class="loginbtn"><b>Thanks</b></button>
+                                <button onclick="validate()" class="btn btn-success" style="border-radius: 50%;color: darkblue;"><b>Thanks</b></button>
                             </td>
                         </tr>
                     </table>
                 </div>
             </form>
-        </center>
+        </center><br>
+        <div class="container">
+            <h2 style="color: steelblue;">App Downloaded Ratio</h2>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+                    <b>90%</b>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

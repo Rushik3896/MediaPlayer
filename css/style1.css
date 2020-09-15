@@ -111,7 +111,7 @@ b
     padding: 55px;
     margin: 10px;
     opacity: .8;
-    box-shadow: 10px 10px 10px rgb(10, 54, 104);
+    box-shadow: 10px 10px 10px rgb(43, 2, 2);
 }
 .sub
 {
@@ -167,18 +167,18 @@ p.class
     background-color: rgb(78, 14, 14);
     background-image: linear-gradient(180deg, #260661,#695353);   
 }
-.media a:link,a:visited
+.media a,a:visited
 {
     width: 50px;
     height: 20px;
     font-size: 18px;
     border-radius: 20px;
-    color: rgba(255, 255, 255, 0.616);
+    color: rgba(189, 152, 152, 0.616);
     background-color: rgba(71, 79, 194, 0.5);
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
-    box-shadow: 2px 2px 20px rgb(240, 234, 234);
+    box-shadow: 2px 2px 20px rgb(74, 56, 119);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .media .button .button2 a:hover, a:active {
@@ -198,6 +198,7 @@ p.class
     text-align: center;
     font-size: 15px;
 }
+
 .button2
 {
     cursor: pointer;

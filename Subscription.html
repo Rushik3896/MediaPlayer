@@ -4,17 +4,36 @@
     <title>Subscribe</title>
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="./js/subscribe.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#d').addClass('animate__animated animate__jello');
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#div').hide();
+            $("#btn1").click(function(){
+                $("#lbl").remove();
+                $("#btn1").remove();
+                $("#btn2").remove();
+                $("#div").show(2000);
+            });
+
+        });
+    </script>
 </head>
 <body class="body1">
     <h1 class="header2" align="center">*Fill the Below Details</h1><hr>
-    <h3 class="icon"><b>
+    <h3 class="icon">
         &nbsp;<i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;<a href="./Login.html" class="button">Log In/Sign Up</a>&nbsp;
         &nbsp;<i class="fa fa-home" aria-hidden="true"></i>&nbsp;<a href="./index.html" class="button">Home</a>&nbsp;
         &nbsp;<i class="fa fa-comments" aria-hidden="true"></i>&nbsp;<a href="./Feedback.html" class="button">Feedback/Report</a>&nbsp;
         &nbsp;<i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;<a href="./About us.html" class="button">About us</a>&nbsp;
-    </h3></b>
+    </h3>
     <span style="font-size:30px;cursor:pointer;color: aliceblue;" onclick="openNav()">&#9776;Menu</span>
         <h2 id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a><hr>
@@ -24,8 +43,15 @@
             <a href="./Feedback.html"><i class="fa fa-comments" aria-hidden="true"></i>&nbsp;Feedback</a><hr>
             <a href="./Login.html"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a><hr>
         </h2><br><br><br><br>
+        <div id="d">
         <center class="sub">
             <form action="./index.html" method="POST" align="center" class="box2">
+                <button id="btn1" class="indexbtn">NewMember</button><br><br>
+                <div id="lbl">
+                    <label style="color: rgb(255, 0, 0);font-size: 40px;"><b> OR </b></label><br><br>
+                </div>
+                <a href="./UpdateSubcription.html"><input id="btn2" type="button" value="Renew" class="indexbtn"></a>
+                <div id="div">
                 <label for="user"><b>Username:</b></label>
                 <input type="text" name="user" placeholder="rushikkheni" required><br><br>
                 <label for="accno"><b>Account Number:</b></label>
@@ -53,10 +79,10 @@
                     </tr></b>
                     </table>
                 </center><br><br>
-                <button onclick="validate()" class="loginbtn"><b>Done</b></button><br><br>
-                <a href="./Subscription.html"><input type="button" value="Reset" class="loginbtn"></a>&nbsp;&nbsp;
-                <a href="./UpdateSubcription.html"><input type="button" value="Renew" class="loginbtn"></a>
+                <button onclick="validate()" class="loginbtn"><b>Done</b></button>
+                </div>
             </form>
         </center>
+        </div>
     </body>
 </html>

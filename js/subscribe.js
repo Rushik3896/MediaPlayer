@@ -5,10 +5,10 @@ function validate()
     var ifsc = document.getElementsByName("ifsc")[0].value;
     var brh = document.getElementsByName("branch")[0].value;
     var patt1 = /^\d{11}$/;
-    var patt2 = /(^[A-Z]{4})([A-Z0-9]{6})/;
     var chkaccn = patt1.test(accn);
-    var chkifsc = patt2.test(ifsc);
     console.log(chkaccn);
+    var patt2 = /(^[A-Z]{4})([A-Z0-9]{6})/;
+    var chkifsc = patt2.test(ifsc);
     console.log(chkifsc);
     console.log("In func");
     {
@@ -42,4 +42,13 @@ function validate()
         alert("Now use your VIP facilities.");
     }
   }
+}
+function display()
+{
+    alert("Your Subscription Removed!");
+}
+
+function renew()
+{
+    alert("Your Subscription Renewed, Enjoy Facilites.");
 }

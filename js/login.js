@@ -1,9 +1,3 @@
-var frm = document.getElementById("myform");
-document.getElementById("myform").addEventListener("submit", function (event){
-  console.log("IN Listener");
-  event.preventDefault()
-});
-
 function display() 
 {
     var nme = document.getElementsByName("user")[0].value;
